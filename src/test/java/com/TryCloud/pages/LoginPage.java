@@ -10,7 +10,6 @@ public class LoginPage {
 
     public LoginPage() {
         PageFactory.initElements(Driver.getDriver(), this);
-
     }
 
     @FindBy(xpath = "//input[@id='user']")
@@ -28,7 +27,6 @@ public class LoginPage {
     public void login(String username, String password) {
         usernameInputBox.sendKeys(username);
         passwordInputBox.sendKeys(password);
-        BrowserUtils.sleep(2);
         loginButton.click();
     }
 
