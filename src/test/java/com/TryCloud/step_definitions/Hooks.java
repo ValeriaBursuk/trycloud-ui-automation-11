@@ -1,9 +1,9 @@
 package com.TryCloud.step_definitions;
 
 import com.TryCloud.utilities.Driver;
+import io.cucumber.java.*;
 import io.cucumber.java.Scenario;
-import org.junit.After;
-import org.junit.Before;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
