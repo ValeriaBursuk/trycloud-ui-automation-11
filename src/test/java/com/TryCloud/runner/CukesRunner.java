@@ -13,9 +13,9 @@ import org.junit.runner.RunWith;
                 "me.jvt.cucumber.report.PrettyReports:/target/cucumber"},  //cucumber plugin for pretty reports
 
         features = "src/test/resources/features",
-        glue = "com/TryCloud/step_definitions"
-        //dryRun = true
-      //  tags =
+        glue = "com/TryCloud/step_definitions",
+       dryRun = true,
+      tags = "@wip"
 
 )
 
