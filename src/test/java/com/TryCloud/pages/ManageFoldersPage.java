@@ -5,10 +5,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ManageFoldersPage {
+import java.util.List;
+
+public class ManageFoldersPage extends BasePage{
 public ManageFoldersPage(){
     PageFactory.initElements(Driver.getDriver(),this);
 }
+    @FindBy(xpath = "//a[@class='menuitem']/span[2]")
+    public List<WebElement> dropdownMenu;
+
+    @FindBy(xpath = "//tbody[@id='fileList']/tr")
+    public List<WebElement> filesListInfo;
+
     @FindBy (xpath = "//div[@class='header-left']/ul/li[2]")
     public WebElement FileFolder;
 
@@ -26,6 +34,9 @@ public ManageFoldersPage(){
 
     @FindBy(xpath = "//span[.='Upload file']")
     public WebElement uploadFileIcon;
+
+    @FindBy(xpath = "//input[@type='file']")
+    public WebElement uploadFileLink;
 
 
 
