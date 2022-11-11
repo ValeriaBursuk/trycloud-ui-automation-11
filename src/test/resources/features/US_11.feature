@@ -1,20 +1,28 @@
-Feature: Access to Talks module feature
+
+Feature: Talks module feature
   User story: As a user, I should be able to access to Talks module.
 
-  Background:
-   Given user on the dashboard page
-  #  When the user clicks the Talk module
+  Background: For the scenarios in feature file, user is expected to be on dashboard page
 
-  @wip
-  Scenario: verify users to access to Talks module
+   Given user on the dashboard page
+   When the user clicks the "Talk" module
+
+
+  Scenario: Verify users have access to Talks module
     #Given user on the dashboard page
-    When the user clicks the "Talk" module
+    #When the user clicks the "Talk" module
     Then verify the page title is "Talk - Trycloud QA"
 
-  Scenario: verify users to send a message
+  @wip
+  Scenario Outline: verify users to send a message
     #Given user on the dashboard page
-    When the user clicks the "Talk" module
-    And user search user from the search box
-    And user write a message
+    #When the user clicks the "Talk" module
+    And user enters the "<Username>" in the search box
+    And user clicks on the "<Username>" on the dropdown menu
+    And user writes a "<Message>"
     And user clicks to submit button
-    Then the user should be able to see the message is displayed on the conversation log
+    Then the user should be able to see the "<Message>" is displayed on the conversation log
+
+    Examples:
+      | Username | Message |
+      | User26   | welcome |
