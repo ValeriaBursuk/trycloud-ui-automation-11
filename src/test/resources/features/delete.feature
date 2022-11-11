@@ -26,7 +26,7 @@ Background:
   @wip
   Scenario: Verify users delete a file/folder
 
-    When the user clicks the "Settings menu" module
+    When the user clicks the "Files" module
     And user click action-icon from any file on the page
     And user choose the "Delete f" option
     When the user clicks the "Deleted files" sub-module on the left side
