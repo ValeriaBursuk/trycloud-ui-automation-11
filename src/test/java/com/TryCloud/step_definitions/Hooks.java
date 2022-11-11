@@ -1,5 +1,7 @@
 package com.TryCloud.step_definitions;
 
+import com.TryCloud.pages.LoginPage;
+import com.TryCloud.utilities.ConfigReader;
 import com.TryCloud.utilities.Driver;
 import io.cucumber.java.*;
 import io.cucumber.java.Scenario;
@@ -8,10 +10,18 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
+
+//    LoginPage loginPage = new LoginPage();
+
+//        System.out.println("----@Before from HOOK class----setUp--------");
+//        System.out.println("Scenario name: " + scenario.getName());
+
     @Before
     public void setUp(Scenario scenario){
         System.out.println("----@Before from HOOK class----setUp--------");
         System.out.println("Scenario name: " + scenario.getName());
+ //       Driver.getDriver().get(ConfigReader.getProperty("env"));
+ //       loginPage.login("User11","Userpass123");
     }
 
     @After

@@ -17,8 +17,8 @@ public class US_12_pages {
 public WebElement contactModule;
 
 
- //   @FindBy (xpath = "(//a[@aria-label='Contacts'])[1]")
- //   public WebElement selectedModule;
+    @FindBy (xpath = "(//a[@aria-label='Contacts'])[1]")
+    public WebElement selectedModule;
 
 
     public  void module (String string ){
