@@ -64,14 +64,9 @@ for (WebElement each : manageFoldersPage.filesListInfo){
     if (each.getAttribute("data-file").equalsIgnoreCase(newFolderName)){
         isNameMatch = true;
     }
-}
+     }
         Assert.assertTrue(isNameMatch);
     }
-
-
-
-
-
 
 
 }
