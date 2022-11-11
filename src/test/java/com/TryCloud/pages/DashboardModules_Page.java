@@ -18,9 +18,7 @@ public class DashboardModules_Page {
 
    public void click_on_module(String moduleOption){
 
-       DashboardModules_Page dashboardModules_page = new DashboardModules_Page();
-
-       for (WebElement eachButton : dashboardModules_page.moduleMenu){
+       for (WebElement eachButton : moduleMenu){
            if (eachButton.getAttribute("aria-label").equalsIgnoreCase(moduleOption)){
                eachButton.click();
                break;
