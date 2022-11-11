@@ -49,6 +49,11 @@ public class BrowserUtils {
 
     }
 
+    public static void verifyTitleContains(String expectedTitle) {
+        String actualTitle = Driver.getDriver().getTitle();
+        Assert.assertTrue("Title Verification Failed", actualTitle.contains(expectedTitle));
+    }
+
     public static void waitForInvisibilityOf(WebElement element){
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(),15);
         wait.until(ExpectedConditions.invisibilityOf(element));
