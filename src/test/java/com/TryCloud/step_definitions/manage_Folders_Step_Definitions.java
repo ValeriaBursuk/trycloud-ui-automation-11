@@ -6,7 +6,6 @@ import com.TryCloud.pages.ManageFoldersPage;
 import com.TryCloud.utilities.BrowserUtils;
 import com.TryCloud.utilities.ConfigReader;
 import com.TryCloud.utilities.Driver;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
