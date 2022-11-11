@@ -46,6 +46,7 @@ public class ManageFolder_Step_Def {
         }
     }
 
+
     @When("user write a folder name")
     public void user_write_a_folder_name() {
 

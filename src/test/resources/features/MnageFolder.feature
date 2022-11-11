@@ -14,6 +14,7 @@ Feature: As a user, I should be able to remove files from the favorites and uplo
     When the user click submit icon
     Then Verify the folder is displayed on the page
 @ang1
+
   Scenario:  Verify users can upload a file inside a folder
     #Given user on the dashboard page
     #When the user clicks the "Files" module

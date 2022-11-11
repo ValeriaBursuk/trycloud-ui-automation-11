@@ -23,6 +23,7 @@ public class ManageFolderPage extends BasePage{
     @FindBy(xpath = "//a[@class='button new']")
     public WebElement AddingBtn;
 
+
     @FindBy(xpath = "//span[.='Upload file']")
     public WebElement newFolderBtn;
 
