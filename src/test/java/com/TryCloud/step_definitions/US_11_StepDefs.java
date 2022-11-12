@@ -23,9 +23,9 @@ public class US_11_StepDefs {
 
     @Given("user on the dashboard page")
     public void user_on_the_dashboard_page() {
-       Driver.getDriver().get(ConfigReader.getProperty("env"));
-       us_11_loginPage.loginUser.sendKeys(ConfigReader.getProperty("username1"));
-       us_11_loginPage.loginPass.sendKeys(ConfigReader.getProperty("password"));
+       Driver.getDriver().get(ConfigReader.getProperty("env2"));
+       us_11_loginPage.loginUser.sendKeys(ConfigReader.getProperty("username12"));
+       us_11_loginPage.loginPass.sendKeys(ConfigReader.getProperty("password11"));
        us_11_loginPage.loginBtn.click();
         System.out.println("User is on dashboard page");
 

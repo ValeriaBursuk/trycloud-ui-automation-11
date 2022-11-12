@@ -7,13 +7,13 @@ Feature: Talks module feature
    Given user on the dashboard page
    When the user clicks the "Talk" module
 
-
+  @anastasiya1
   Scenario: Verify users have access to Talks module
     #Given user on the dashboard page
     #When the user clicks the "Talk" module
     Then verify the page title is "Talk - Trycloud QA"
 
-  @wip
+  @anastasiya2
   Scenario Outline: verify users to send a message
     #Given user on the dashboard page
     #When the user clicks the "Talk" module
