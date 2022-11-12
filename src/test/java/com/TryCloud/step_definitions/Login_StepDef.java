@@ -31,7 +31,8 @@ public class Login_StepDef {
 
     @Then("user should be launched at the dashboard page")
     public void user_should_be_launched_at_the_dashboard_page() {
-        Assert.assertEquals("http://qa2.trycloud.net/index.php/apps/dashboard/", Driver.getDriver().getCurrentUrl());
+        Assert.assertEquals("http://qa2.trycloud.net/index.php/apps/dashboard/",
+                Driver.getDriver().getCurrentUrl());
 
 
     }
