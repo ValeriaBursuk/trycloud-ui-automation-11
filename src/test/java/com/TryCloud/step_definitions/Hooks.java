@@ -1,5 +1,7 @@
 package com.TryCloud.step_definitions;
 
+import com.TryCloud.pages.LoginPage;
+import com.TryCloud.utilities.ConfigReader;
 import com.TryCloud.utilities.Driver;
 import io.cucumber.java.*;
 import io.cucumber.java.Scenario;
@@ -8,10 +10,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
-    @Before
+    LoginPage loginPage = new LoginPage();
+
+    @Before()
     public void setUp(Scenario scenario){
-        System.out.println("----@Before from HOOK class----setUp--------");
+       System.out.println("----@Before from HOOK class----setUp--------");
         System.out.println("Scenario name: " + scenario.getName());
+
     }
 
     @After
@@ -23,7 +28,7 @@ public class Hooks {
             scenario.attach(screenshot, "image/png", scenario.getName());
         }
 
-        Driver.closeDriver();
+    //    Driver.closeDriver();
     }
 
 }
