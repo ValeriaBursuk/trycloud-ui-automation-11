@@ -10,18 +10,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
+    LoginPage loginPage = new LoginPage();
 
-//    LoginPage loginPage = new LoginPage();
-
-//        System.out.println("----@Before from HOOK class----setUp--------");
-//        System.out.println("Scenario name: " + scenario.getName());
-
-    @Before
+    @Before()
     public void setUp(Scenario scenario){
-        System.out.println("----@Before from HOOK class----setUp--------");
+       System.out.println("----@Before from HOOK class----setUp--------");
         System.out.println("Scenario name: " + scenario.getName());
- //       Driver.getDriver().get(ConfigReader.getProperty("env"));
- //       loginPage.login("User11","Userpass123");
+
     }
 
     @After
@@ -33,7 +28,7 @@ public class Hooks {
             scenario.attach(screenshot, "image/png", scenario.getName());
         }
 
-        Driver.closeDriver();
+    //    Driver.closeDriver();
     }
 
 }
