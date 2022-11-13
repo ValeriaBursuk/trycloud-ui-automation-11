@@ -24,7 +24,7 @@ public class US_12_stepDefs {
       //  loginPage.loginButton.click();
       // loginPage.login("User11", "Userpass123");
 
-        Driver.getDriver().get(ConfigReader.getProperty("env"));
+        Driver.getDriver().get(ConfigReader.getProperty("env2"));
         loginPage.login("User11","Userpass123");
     }
     @When("the user clicks the {string} module")
