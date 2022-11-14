@@ -1,5 +1,4 @@
 
-
 Feature: Talks module feature
   User story: As a user, I should be able to access to Talks module.
 
