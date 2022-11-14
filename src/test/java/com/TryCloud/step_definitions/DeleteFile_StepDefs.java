@@ -22,7 +22,7 @@ public class DeleteFile_StepDefs {
 
 LoginPage loginPage = new LoginPage();
 
-    @When("the user clicks the {string} module")
+    @When("the user clicks the {string} Delete f module")
     public void the_user_clicks_the_module(String string) {
 
         Driver.getDriver().get(ConfigReader.getProperty("env"));
