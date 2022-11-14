@@ -4,8 +4,8 @@ Feature: Talks module feature
 
   Background: For the scenarios in feature file, user is expected to be on dashboard page
 
-   Given user on the dashboard page
-   When the user clicks the "Talk" module
+   Given user on the dashboard Page
+   When the user clicks the "Talk" talk module
 
   @anastasiya1
   Scenario: Verify users have access to Talks module
