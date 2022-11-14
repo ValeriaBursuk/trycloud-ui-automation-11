@@ -49,6 +49,11 @@ public class BrowserUtils {
 
     }
 
+    public static void verifyTitleContains(String expectedTitle) {
+        String actualTitle = Driver.getDriver().getTitle();
+        Assert.assertTrue("Title Verification Failed", actualTitle.contains(expectedTitle));
+    }
+
     public static void waitForInvisibilityOf(WebElement element){
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(),15);
         wait.until(ExpectedConditions.invisibilityOf(element));
@@ -495,6 +500,14 @@ public class BrowserUtils {
     public static void waitForPresenceOfElement(By by, long time) {
         new WebDriverWait(Driver.getDriver(), time).until(ExpectedConditions.presenceOfElementLocated(by));
     }
+
+
+
+    public static void waitUntilClickable(WebElement element) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 20);
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
 
 
 }

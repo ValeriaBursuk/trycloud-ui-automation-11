@@ -1,8 +1,3 @@
-
-
-
-
-
 Feature:delete a file/folder.
 
   User Story: As a user, I should be able to delete a file/folder.
@@ -22,8 +17,6 @@ Background:
 
 
 
-
-  @wip
   Scenario: Verify users delete a file/folder
 
     When the user clicks the "Files" module

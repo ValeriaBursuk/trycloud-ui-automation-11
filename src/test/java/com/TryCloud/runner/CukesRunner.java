@@ -7,15 +7,16 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {
-                "pretty",
-                "html:target/cucumber-report.html",  //normal html report
-                "rerun:target/rerun.txt",  //for rerun report
-                "me.jvt.cucumber.report.PrettyReports:target/cucumber"},  //cucumber plugin for pretty reports
+               // "pretty",
+                "html:target/cucumber-report.html",
+                "rerun:target/rerun.txt",
+                "me.jvt.cucumber.report.PrettyReports:target/cucumber",
+                "json:target/cucumber.json"},
 
         features = "src/test/resources/features",
-        glue = "com/TryCloud/step_definitions",
-        dryRun =false,
-        tags = "@anastasiya2"
+        glue = "com/TryCloud/step_definitions"
+        //dryRun =false,
+        //tags = "@favs"
 
 )
 
