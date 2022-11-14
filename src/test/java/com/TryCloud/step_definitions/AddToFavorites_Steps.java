@@ -54,7 +54,6 @@ public class AddToFavorites_Steps {
     @When("user click the Favorites {string} sub-module on the left side")
     public void user_click_the_sub_module_on_the_left_side(String favorites) {
         filesPage.click_on_sub_module(favorites).click();
-        BrowserUtils.sleep(3);
     }
 
     @Then("Verify the chosen file is listed on the table")
@@ -75,12 +74,11 @@ public class AddToFavorites_Steps {
         filesPage.newFolderName.clear();
         expectedFile = faker.lorem().word();
         filesPage.newFolderName.sendKeys(expectedFile + Keys.ENTER);
-        BrowserUtils.sleep(3);
     }
     @When("user clicks on Star icon in the opened side view")
     public void user_clicks_on_star_icon_in_the_opened_side_view() {
         filesPage.starSideBar.click();
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(1);
     }
 
 }
