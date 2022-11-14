@@ -44,7 +44,6 @@ public class Driver {
                     driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     break;
                     
-           
                  case "edge":
                     WebDriverManager.edgedriver().setup();
                     driverPool.set(new EdgeDriver());
