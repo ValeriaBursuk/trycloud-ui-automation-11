@@ -21,7 +21,7 @@ public class US_11_StepDefs {
     US_11_SendMessagePage us_11_sendMessagePage =new US_11_SendMessagePage();
 
 
-    @Given("user on the dashboard page")
+    @Given("user on the dashboard Page")
     public void user_on_the_dashboard_page() {
        Driver.getDriver().get(ConfigReader.getProperty("env2"));
        us_11_loginPage.loginUser.sendKeys(ConfigReader.getProperty("username12"));
@@ -30,7 +30,7 @@ public class US_11_StepDefs {
         System.out.println("User is on dashboard page");
 
     }
-    @When("the user clicks the {string} module")
+    @When("the user clicks the {string} talk module")
     public void theUserClicksTheModule(String string) {
         us_11_dashboardPage.module(string);
     }

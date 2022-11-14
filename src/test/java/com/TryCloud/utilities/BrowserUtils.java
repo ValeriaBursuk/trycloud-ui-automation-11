@@ -502,6 +502,14 @@ public class BrowserUtils {
     }
 
 
+
+    public static void waitUntilClickable(WebElement element) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 20);
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
+
+
 }
 
 
