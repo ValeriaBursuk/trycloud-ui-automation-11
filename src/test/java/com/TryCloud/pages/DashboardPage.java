@@ -37,6 +37,7 @@ public class DashboardPage {
         return modulesText;
 
     }
+    //update
 
     public void clickModulesWithText(String moduleName) {
 

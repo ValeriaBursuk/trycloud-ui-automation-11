@@ -60,6 +60,7 @@ public class FilesPage {
     public void assertCheckButtonsisChecked() {
         for (WebElement checkFileButton : SelectAllFiles) {
             Assert.assertTrue(checkFileButton.isSelected());
+            //update
         }
 
     }
