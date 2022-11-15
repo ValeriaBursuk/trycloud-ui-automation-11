@@ -1,5 +1,5 @@
 Feature:
-@FM04
+@wip04
   Scenario Outline: Test login with valid credentials
     Given user on the login page
     When user enters valid "<username>" and valid "<password>" and clicks login button
