@@ -39,7 +39,7 @@ public class US9Page {
     @FindBy(xpath = "//input[@class='submit icon-confirm has-tooltip']")
     public WebElement submitButton;
 
-    @FindBy(xpath = "//div[.='comment']")
+    @FindBy(xpath = "(//li[contains(@class,'comment')])[1]")
     public WebElement actualComment;
 
     @FindBy(xpath = "(//div[@class='message'])[2]")
