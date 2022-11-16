@@ -1,6 +1,7 @@
 package com.TryCloud.pages;
 
 import com.TryCloud.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -39,13 +40,22 @@ public class US9Page {
     @FindBy(xpath = "//input[@class='submit icon-confirm has-tooltip']")
     public WebElement submitButton;
 
-    @FindBy(xpath = "(//li[contains(@class,'comment')])[1]")
-    public WebElement actualComment;
+//    @FindBy(xpath = "(//li[contains(@class,'comment')])[1]")
+//    public WebElement actualComment;
+//
+//
 
     @FindBy(xpath = "(//div[@class='message'])[2]")
     public WebElement commentToAppear;
 
 
+
+
+    public boolean messageOutput (String input){
+       WebElement message=Driver.getDriver().findElement(By.xpath("//div[.='"+ input + "']" ));
+
+        return  message.isDisplayed();
+    }
 
 
 }

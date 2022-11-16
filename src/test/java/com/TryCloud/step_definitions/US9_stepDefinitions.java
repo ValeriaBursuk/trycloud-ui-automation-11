@@ -12,8 +12,7 @@ import org.openqa.selenium.WebElement;
 
 public class US9_stepDefinitions {
     US9Page us9Page = new US9Page();
- String expected;
-
+    String expected;
 
 
     @Given("User logedIn and on the dashboard page")
@@ -24,10 +23,12 @@ public class US9_stepDefinitions {
         us9Page.password.sendKeys("Userpass123");
         us9Page.loginBtn.click();
     }
+
     @When("the user clicks the Files module")
     public void theUserClicksTheFilesModule() {
         us9Page.filesModule.click();
     }
+
     @When("user click action-icon  from any file on the page")
     public void user_click_action_icon_from_any_file_on_the_page() {
 
@@ -40,6 +41,7 @@ public class US9_stepDefinitions {
         }
 
     }
+
     @And("user choose the Details option")
     public void userChooseTheDetailsOption() {
         us9Page.detailsOption.click();
@@ -59,13 +61,21 @@ public class US9_stepDefinitions {
         us9Page.submitButton.click();
 
     }
-    @Then("Verify the comment is displayed in the comment section.")
-    public void verify_the_comment_is_displayed_in_the_comment_section() {
-   //    String actual=us9Page.actualComment.getText();
-      //  Assert.assertEquals(expected, actual);
+
+    @Then("Verify the {string} is displayed in the comment section.")
+    public void verifyTheIsDisplayedInTheCommentSection(String comment) {
+    //   String in= us9Page.messageOutput(comment);
+   //     System.out.println("in = " + in);
+Assert.assertTrue(us9Page.messageOutput(comment));
 
 
+    }
 
+
+//    @Then("Verify the comment is displayed in the comment section.")
+//    public void verify_the_comment_is_displayed_in_the_comment_section() {
+//        String actual = us9Page.actualComment.getText();
+//        Assert.assertEquals(expected, actual);
 
 
 
@@ -73,5 +83,3 @@ public class US9_stepDefinitions {
     }
 
 
-
-}
