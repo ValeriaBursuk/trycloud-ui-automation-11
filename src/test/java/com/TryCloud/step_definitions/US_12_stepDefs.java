@@ -16,29 +16,29 @@ public class US_12_stepDefs {
    US_12_pages us_12_pages = new US_12_pages();
      //BrowserUtils browserUtils = new BrowserUtils();
 
-    @Given("user on the dashboard page")
-   public void user_on_the_dashboard_page() {
+//    @Given("user on the dashboard page")
+//   public void user_on_the_dashboard_page() {
      //   Driver.getDriver().get(ConfigReader.getProperty("env"));
      //  loginPage.username.sendKeys(ConfigReader.getProperty("username"));
       //  loginPage.password.sendKeys(ConfigReader.getProperty("password"));
       //  loginPage.loginButton.click();
       // loginPage.login("User11", "Userpass123");
 
-        Driver.getDriver().get(ConfigReader.getProperty("env2"));
-        loginPage.login("User11","Userpass123");
-    }
-    @When("the user clicks the {string} module")
-    public void the_user_clicks_the_module(String string) {
-      us_12_pages.module(string);
-
-    }
-    @Then("verify the page title is {string}")
-    public void verify_the_page_title_is(String expectedTitle) {
-
-        String actualTitle = Driver.getDriver().getTitle();
-
-        Assert.assertEquals(expectedTitle,actualTitle);
-
-    }
+//        Driver.getDriver().get(ConfigReader.getProperty("env2"));
+//        loginPage.login("User11","Userpass123");
+//    }
+//    @When("the user clicks the {string} module")
+//    public void the_user_clicks_the_module(String string) {
+//      us_12_pages.module(string);
+//
+//    }
+//    @Then("verify the page title is {string}")
+//    public void verify_the_page_title_is(String expectedTitle) {
+//
+//        String actualTitle = Driver.getDriver().getTitle();
+//
+//        Assert.assertEquals(expectedTitle,actualTitle);
+//
+//    }
 
 }

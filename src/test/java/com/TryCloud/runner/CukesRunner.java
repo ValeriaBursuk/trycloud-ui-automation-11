@@ -14,9 +14,9 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json"},
 
         features = "src/test/resources/features",
-        glue = "com/TryCloud/step_definitions"
-        //dryRun =false,
-        //tags = "@favs"
+        glue = "com/TryCloud/step_definitions",
+        dryRun = false,
+        tags = "@us9"
 
 )
 
