@@ -50,6 +50,9 @@ public class DashboardPage {
                 modules1.get(i).click();
 
                 break;
+
+
+
             }
 
         }
